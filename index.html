@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MY_PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#about .image.main {
+    float: left;
+    margin-right: 20px; /* Space between image and text */
+    max-width: 200px; /* Adjust based on desired image size */
+}
+
+#about p {
+    text-align: justify;
+}
+
+#about:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    #about .image.main {
+        float: none;
+        margin-right: 0;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+
+			/* Style the nav buttons to be side by side */
+			nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex; /* Ensures ruby text is displayed */
+    justify-content: center;  /* Centers the content */
+}
+
+	
+			/* Style for each button */
+			nav ul li {
+				margin: 10px;
+				flex-wrap: wrap;
+			}
+	
+			/* Button styling */
+/* Button styling */
+nav ul li button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    
+    /* Further reduced button size */
+    font-size: 0.6rem; /* Smaller font size */
+    font-weight: 300;
+    height: 1.8rem; /* Reduced height */
+    line-height: 1.8rem; /* Match the height */
+    padding: 0 0.75rem; /* Reduced padding */
+
+    letter-spacing: 0.1rem;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+
+	
+			/* Glowing effect on hover */
+			nav ul li button:hover {
+				background-color:None; /* Slightly lighter background on hover */
+				box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.6); /* Glowing effect */
+			}
+	
+			/* Section visibility */
+			section {
+				display: none;
+			}
+	
+			section.active {
+				display:grid
+			}
+		</style> 	
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<span class="icon fa-gem"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>ADITI DESAI</h1>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#about">ABOUT ME</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="portfolio">
+				
+			</div>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- about -->
+				<article id="about">
+					<h1 class="major">ABOUT ME</h1>
+					<span class="image main">
+						<img src="images/pic01.jpg" alt="Certifications" />
+					</span>
+					<p>As a dedicated 4th-year Bachelor of Engineering student specializing in Artificial Intelligence and Data Science at DY Patil College of Engineering (DYPCOE), I am deeply immersed in the dynamic field of machine learning.</p>
+					<p>Hailing from Pune, where I have pursued my academic journey, I am passionate about exploring innovative intersections between <strong>Machine learning and web development</strong>. With a strong foundation in both domains, I am eager to contribute to and learn from projects that blend these areas.</p>
+					<p>Currently seeking placement opportunities, I am committed to advancing my expertise and knowledge in machine learning and web development to drive impactful solutions in the tech industry.</p>
+				</article>
+				
+				
+				
+				<!-- Portfolio -->
+				<article id="portfolio">
+					<h2 class="major">Portfolio</h2>
+					<nav>
+						<ul>
+							<li><button onclick="showSection('certifications')">CERTIFICATIONS</button></li>
+							<li><button onclick="showSection('projects')">PROJECTS</button></li>
+							<li><button onclick="showSection('work')">WORK EXPERIENCE</button></li>
+							<li><button onclick="showSection('achievements')">ACHIEVEMENTS</button></li>
+						</ul>
+					</nav>
+			
+					<!-- Certifications Section -->
+					<section id="certifications">
+						<h3 class="major">Certifications</h3>
+						<span class="image main"><img src="images/pic07.jpg" alt="Certifications" /></span>
+						<span class="image main"><img src="images/pic02.jpg" alt="Certifications" /></span>
+						<span class="image main"><img src="images/pic03.jpg" alt="Certifications" /></span>
+						<span class="image main"><img src="images/pic04.jpg" alt="Certifications" /></span>
+						<p>Details of certifications go here, such as online courses, workshops, and professional certifications.</p>
+					</section>
+			
+					<!-- Projects Section -->
+					<section id="projects">
+						<h3 class="major">Projects</h3>
+						<p>List of projects you have worked on, including descriptions, technologies used, and project links if available.</p>
+					</section>
+			
+					<!-- Work Experience Section -->
+					<section id="work">
+						<h3 class="major">Work Experience</h3>
+						<span class="image main">
+							<img src="images/pic08.jpg" alt="Certifications" />
+						</span>
+						<p>This is internship completion certificate at Bharat Intern.</p>
+						<span class="image main">
+							<img src="images/pic09.jpg" alt="Certifications" />
+						</span>
+						<p>This is Recommendation certificate got from TECH-A-INTERN.</p>
+
+						<span class="image main">
+							<img src="images/pic10.jpg" alt="Certifications" />
+						</span>
+						<p>This is internship completion certificate at Bharat Intern.</p>
+
+						<span class="image main">
+							<img src="images/pic11.jpg" alt="Certifications" />
+						</span>
+						<p>This is internship completion certificate at TECH-A-INTERN.</p>
+						<span class="image main">
+							<img src="images/pic12.jpg" alt="Certifications" />
+						</span>
+						<p>This is internship completion certificate at DATA AVENGERS.</p>
+					</section>
+			
+					<!-- Achievements Section -->
+					<section id="achievements">
+						<h3 class="major">Achievements</h3>
+						<span class="image main">
+							<img src="images/pic05.jpg" alt="Certifications" />
+						</span>
+						<span class="image main">
+							<img src="images/pic06.jpg" alt="Certifications" />
+						</span>
+					</section>
+				</article>
+				<script>
+					// Function to show the selected section and hide others
+					function showSection(sectionId) {
+						// Get all sections
+						var sections = document.querySelectorAll('section');
+						// Hide all sections
+						sections.forEach(function(section) {
+							section.classList.remove('active');
+						});
+						// Show the selected section
+						var selectedSection = document.getElementById(sectionId);
+						selectedSection.classList.add('active');
+					}
+			
+					// Optionally, show the first section by default
+					// document.getElementById('certifications').classList.add('active');
+				</script>
+
+				<!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/aditi-desai-588107239/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/aditi_d03/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/githubcodingjoiner" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</article>
+
+			</div>
+
+			
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
